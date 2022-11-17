@@ -1,21 +1,100 @@
+/* BEGIN (write your solution here) */
+@font-face {
+  font-family: Raleway;
+  font-size: 400;
+  src: url("../assets/fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-size: 700;
+  font-family: Raleway;
+  src: url("../assets/fonts/Raleway-Bold.ttf");
+}
+/* END */
+
 body {
-  font-family: sans-serif;
-  line-height: 1.5;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 50px;
 
-  background-color: #f9f9f9;
-  color: #333333;
+  color: #eee;
 
-  width: 980px;
-  margin: 0 auto;
+  /* BEGIN (write your solution here) */
+  font: 20px/1.5 Raleway, sans-serif;
+  /* END */
+
+  background-image: linear-gradient(to right top, #222831, #282d36, #2d333b, #333841, #393e46);
+}
+
+img {
+  max-width: 100%;
+
+  vertical-align: middle;
+}
+
+a {
+  color: inherit;
 }
 
 h1 {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 0;
+  font-size: 2em;
 }
 
-main > h2 {
+h2 {
+  color: #00adb5;
+  font-size: 1.5em;
+}
+
+.tabs {
+  width: 1024px;
+  margin: 0 auto;
+
+  /* BEGIN (write your solution here) */
+  
+  /* END */
+}
+
+/* BEGIN (write your solution here) */
+.columns-3 {
+  column-count: 3;
+  column-gap: 0;
+}
+
+ul {
+  margin-top: 0;
+}
+
+.container {
+  box-sizing: border-box;
+  list-style-type: none;
+  column-span: none;
   text-align: center;
-  font-size: 25px;
+}
+
+.tabs-content {
+  column-count: 3;
+  column-gap: 30px;
+
+  background-color: #393e46;
+}
+
+a {
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #00adb5;
+}
+
+.tabs-content-item:hover {
+  display: block;
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* END */
+
+.span-all {
+  column-span: all;
 }
